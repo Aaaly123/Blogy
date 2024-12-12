@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #dadada;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #3c3c3c;
+ 
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  h3 {
+    color: #008ad5;
+ 
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .punchLine{
+    color: #e28b00;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  h1 {
+    color: #008ad5;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  
+  p {
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  
+  form {
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    background-color: #008ad5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+
+    background-color: #0083ca;
+
+    color: #333;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  
+  form input[type="submit"] {
+    background-color: white;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #008ad5;
+  }
+  
+  .blogs-container {
+    margin-top: 30px;
+  }
+  
+  .blog {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .blog h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    form input[type="text"], form input[type="submit"] {
+      font-size: 0.9rem;
+    }
+  }
+
+  .footerPunchline{
+    color: white;
+  }
+
+
+  h1,h2,h3,h4,p{
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  
+
+  .createdByFont{
+    font-size: 3.0rem;
+  }

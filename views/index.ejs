@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  
+    
+    <h1>Blogy.com</h1>
+    <h2 class="punchLine">Your Personlized Blog Notes</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2> To Add a blog, enter your Blog details Below </h2>
+    <form action="/submit" method="POST">
+      <input type="text" name="bName" placeholder="Blog name">
+      <input type="text" name="bContent" placeholder="Blog content">
+      <input type="submit" value="OK">
+    </form> 
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <% if (blogs.length > 0) { %>
+      <h2>Previously Written Blogs are: </h2>
+      <br>
+      <br>
+      <% blogs.forEach(blog => { %>
+        <h3> <%= blog.name %></h3>
+        <p> <%= blog.content %></p>
+      <% }) %>
+    <% } %>
+    
+</body>
+
+<%- include("partials/footer.ejs") %>
+
+</html>
